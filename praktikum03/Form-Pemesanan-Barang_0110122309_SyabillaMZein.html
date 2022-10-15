@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+    <!-- Tampilan Header -->
+            <!-- Navigasi Halaman -->
+            <nav style="background-color: #F1BAA1; padding: 5px; border-bottom: 4px solid black;">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <img src="assets/img/kiri.png" alt="" width="25">
+                            <img src="assets/img/kanan.png" alt="" width="25">
+                            <img src="assets/img/silang.png" alt="" width="25">
+                            <img src="assets/img/home.png" alt="" width="25">
+                        </td>
+                        <td>
+                            <input type="text" placeholder="http://" style="width: 900px;">
+                        </td>
+                        <td>
+                            <button><img src="assets/img/search.png" alt="" width="25"></button>
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+        
+        <!-- Untuk membuat isi content berada di tengah -->
+        <div style="margin-left: 20%;">
+
+            <!-- Buat Navigasi Menu -->
+            <div style="border:2px solid black;color:black; width: 500px; margin-left: 10%; padding: 5px; margin-top: 20px; text-align: center;">
+                <a href="">Home</a> |
+                <a href="">Generate Link</a> |
+                <a href="">Transaction History</a> |
+                <a href="">Policy</a> |
+                <a href="">Logout</a>
+            </div>
+
+            <!-- Content -->
+            <!-- Tabel Upload Gambar -->
+            <table align="left" cellpadding="10" style="margin-top: 50px;">
+                <tr>
+                    <td><img src="assets/img/produk.jpg" alt="" width="200"></td>
+                </tr>
+                <tr>
+                    <td><button>Upload Picture</button></td>
+                </tr>
+            </table>
+
+            <!-- Tabel Form -->
+            <table align="left" cellpadding="5" style="margin-top: 50px;">
+                <!-- Title -->
+                <tr>
+                    <td><label for="title">Title Here :</label></td>
+                    <td><input type="text" placeholder="MacBook Air £800"></td>
+                </tr>
+
+                <!-- Deskripsi -->
+                <tr>
+                    <td><label for="description">Description :</label></td>
+                    <td><textarea name="description" id="" cols="25" rows="5">
+Year : 2009 
+Model : 
+Condition : Mint
+                </textarea></td>
+                </tr>
+
+                <!-- Nomor Akun -->
+                <tr>
+                    <td><label for="account-number">Account Number :</label></td>
+                    <td><input type="text" placeholder="123-456-789-0"></td>
+                </tr>
+                <!-- List Bank -->
+                <tr>
+                    <td><label for="bank">Bank :</label></td>
+                    <td>
+                        <select name="bank" id="bank" style="width: 150px;">
+                            <option>HSBC</option>
+                            <option>HSBC</option>
+                            <option>HSBC</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Nama Akun -->
+                <tr>
+                    <td><label for="account-holder">Account Holder</label></td>
+                    <td><input type="text" placeholder="Name Here"></td>
+                </tr>
+
+                <!-- Transaksi -->
+                <tr>
+                    <td><label for="transaction">Transaction</label></td>
+                    <td>
+                        <select name="bank" id="bank" style="width: 50px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td>* if the transaction is for 3 person, choose 3 from the drop-down list</td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td><input type="checkbox" name="mobile" checked>Send to Mobile Phone</td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td><input type="checkbox" name="email" id="email" checked>Send to Email</td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Send to Mobile Phone :</label></td>
+                    <td><input type="text" placeholder="1234567890, 1234567891"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Send to Email :</label></td>
+                    <td><input style="width: 300px;" type="email" placeholder="mfmm2g13@soton.ac.uk, fys_06@yahoo.com"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" style="background: GREEN; padding: 5px; color: white;">Generate Nabr Link</button></td>
+                </tr>
+            </table>
+        </header>
+    </div>
+</body>
+</html>

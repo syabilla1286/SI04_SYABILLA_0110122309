@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Form Pemesanan Barang</title>
+</head>
+<body>
+    <!-- Tampilan Header -->
+            <!-- Navigasi Halaman -->
+            <nav style="background-color: #F1BAA1; padding: 5px; border-bottom: 4px solid black;">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <img src="assets/img/kiri.png" alt="" width="25">
+                            <img src="assets/img/kanan.png" alt="" width="25">
+                            <img src="assets/img/silang.png" alt="" width="25">
+                            <img src="assets/img/home.png" alt="" width="25">
+                        </td>
+                        <td>
+                            <input type="text" placeholder="http://" style="width: 900px;">
+                        </td>
+                        <td>
+                            <button><img src="assets/img/search.png" alt="" width="25"></button>
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+
+    <!-- Untuk membuat isi content berada di tengah -->
+    <div style="margin-left: 20%;">
+
+        <!-- Buat Navigasi Menu -->
+        <div style="border:2px solid black;color:black; width: 500px; margin-left: 10%; padding: 5px; margin-top: 20px; text-align: center;">
+            <a href="">Home</a> |
+            <a href="">Register</a> |
+            <a href="">Policy</a> |
+            <a href="">About</a>
+        </div>
+
+    <!-- Content -->
+    <!-- Tabel Hasil Upload Gambar -->
+    <table align="left" cellpadding="10" style="margin-top: 50px;">
+        <tr>
+            <td><img src="assets/img/produk.jpg" alt="" width="200"></td>
+        </tr>
+    </table>
+
+    <!-- Tabel Form -->
+    <table cellpadding="5" style="margin-top: 70px;">
+        <!-- Title -->
+        <tr>
+            <td><b>Title Here :</b></td>
+            <td>MacBook Air £800</td>
+        </tr>
+        <!-- Deskripsi -->
+        <tr>
+            <td><b>Description :</b></td>
+            <td>Year : 2009 <br> Model : <br> Condition : Mint</td>
+        </tr>
+        <!-- Total -->
+        <tr>
+            <td><b>Total Amount :</b></td>
+            <td>£800</td>
+        </tr>
+        <!-- Pembayaran -->
+        <tr>
+            <td><b>Pay to :</b></td>
+            <td>123-456-789-0</td>
+        </tr>
+        <!-- Tipe Pembayaran -->
+        <tr>
+            <td><b>Payment Type :</b></td>
+            <td>
+                <select name="payment" id="payment" style="width: 150px;">
+                    <option>Visa Debit</option>
+                    <option>Visa Debit</option>
+                </select>
+            </td>
+        </tr>
+        <!-- Nama Akun -->
+        <tr>
+            <td><b>Account Holder :</b></td>
+            <td><input type="text" placeholder="Name Here" disabled></td>
+        </tr>
+        <!-- Nomor Akun -->
+        <tr>
+            <td><b>Account No :</b></td>
+            <td><input type="text" placeholder="123-456-789-0" disabled></td>
+        </tr>
+        <!-- Kirim Hasil-->
+        <tr>
+            <td>  </td>
+            <td><input type="checkbox" name="mobile" checked>Send to Mobile Phone</td>
+        </tr>
+        <tr>
+            <td>  </td>
+            <td><input type="checkbox" name="email" id="email" checked>Send to Email</td>
+        </tr>
+        <tr>
+            <td><label for="mobile">Send to Mobile Phone :</label></td>
+            <td><input type="text" placeholder="1234567890, 1234567891" disabled></td>
+        </tr>
+        <tr>
+            <td><label for="email">Send to Email :</label></td>
+            <td><input style="width: 300px;" type="email" placeholder="mfmm2g13@soton.ac.uk, fys_06@yahoo.com" disabled></td>
+        </tr>
+        <!-- Tombol Pembayaran -->
+        <td colspan="2"><button type="submit" style="background: GREEN; padding: 5px; color: white;">Generate Nabr Link</button></td>
+    </table>
+</body>
+</html>
