@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 9.4</title>
+</head>
+<body>
+    <h2>Menghitung Jumlah Dua Bilangan</h2>
+
+    <form onchange="penjumlahan()">
+        <input type="number" id="input1">
+        <br>
+        +
+        <br>
+        <input type="number" id="input2">
+        <br>
+        =
+        <br>
+        <input type="number" id="hasil">
+    </form>
+
+    <script>
+        function penjumlahan() {
+            let angka1 = parseInt(document.getElementById("input1").value);
+            let angka2 = parseInt(document.getElementById("input2").value);
+
+            // Rumus
+            let h = angka1 + angka2;
+
+            document.getElementById("hasil").value = h;
+        }
+    </script>
+</body>
+</html>
