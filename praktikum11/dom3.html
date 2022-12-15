@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Attribute</title>
+    <style>
+        .bingkai {
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar DOM Javascript</h1>
+    <img src="singa.jpg" width="300" id="gambar">
+    <br>
+    <input type="text" value="Nama" id="input">
+
+    <script>
+        let img = document.getElementById("gambar");
+        let input = document.getElementById("input");
+
+        // Mengubah Isi Attribute 
+        img.width = 500; // Mengubah attribute ukuran pada gambar dari 300 menjadi 500
+        input.value = "Singa";
+
+        // Menambahkan/Buat Attribute Class pada tag img
+        img.setAttribute("class","bingkai");
+
+        // Membuat CSS
+        input.style.backgroundColor = "yellow"; // Mengubah background color pada tag input
+        input.style.border = "3px solid purple";
+    </script>
+</body>
+</html>

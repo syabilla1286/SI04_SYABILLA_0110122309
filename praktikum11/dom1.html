@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akses Element</title>
+</head>
+<body>
+    <h1>Belajar Dom Javascript</h1>
+
+    <div id="box1"></div>
+
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        // Akses Element dengan ID
+        // document.getElementById("box1").innerHTML = "Praktikum Web";
+        // Simpan Akses ke Variabel
+        let box1 = document.getElementById("box1");
+        box1.innerHTML = "Praktikum Web";
+
+        // Akses Element dengan Class
+        // Karena class dengan nama "boxes" lebih dari 1 maka harus dipanggil dengan index terlebih dulu
+        // Index dimulai dari angka 0
+        // let boxes = document.getElementsByClassName("boxes")[0]; ( misalkan mau akses class boxes yang pertama)
+        let boxes = document.getElementsByClassName("boxes");
+        boxes[0].innerHTML = "Basic";
+        boxes[1].innerHTML = "Advanced";
+        boxes[2].innerHTML = "Expert";
+
+        // Akses Element dengan Tag
+        let list = document.getElementsByTagName("li");
+        list[0].innerHTML = "Python";
+        list[1].innerHTML = "PHP";
+        list[2].innerHTML = "Java";
+    </script>
+</body>
+</html>

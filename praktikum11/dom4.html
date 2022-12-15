@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event DOM</title>
+</head>
+<body>
+    <h1>Belajar DOM Javascript</h1>
+
+    <!-- Buat Event di Tag -->
+    <input type="text" id="input1" onclick="berubah()">
+    <br>
+    <input type="text" id="input2">
+
+    <script>
+        let input = document.getElementById("input1");
+        let input2 = document.getElementById("input2");
+
+        // Buat Fungsi
+        function berubah() {
+            input.style.backgroundColor = "red";
+        }
+
+        // Event Listener
+        input2.addEventListener("mouseenter", function(){
+            input2.style.backgroundColor = "purple"; // Ubag jadi ungu
+        })
+
+        input2.addEventListener("mouseleave", function(){
+            input2.style.backgroundColor = "white"; // Ubah jadi putih
+        })
+    </script>
+</body>
+</html>
